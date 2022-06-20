@@ -1,12 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { chooseMonster } from '../../redux/monsters/monsters';
 
 const Monster = (props) => {
   const { id, name } = props;
+  const dispatch = useDispatch();
+
+  const searchMonster = () => {
+    dispatch(chooseMonster(id));
+  };
 
   return (
     <div id={id}>
-      <h3>{name}</h3>
+      <NavLink
+        className={({ isActive }) => (isActive ? 'link-active' : 'link')}
+        to="selectedMonster"
+        onClick={searchMonster}
+      >
+        {name}
+      </NavLink>
     </div>
   );
 };
@@ -14,6 +28,11 @@ const Monster = (props) => {
 export default Monster;
 
 Monster.propTypes = {
-  id: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
+  id: PropTypes.number,
+  name: PropTypes.string,
+};
+
+Monster.defaultProps = {
+  id: 0,
+  name: 'MONSTER',
 };
