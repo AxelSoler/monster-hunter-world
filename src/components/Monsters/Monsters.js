@@ -5,11 +5,10 @@ import store from '../../redux/configureStore';
 import Monster from '../Monster/Monster';
 
 const Monsters = () => {
-  const allMonsters = useSelector((state) => state.listOfMonsters);
+  const allMonsters = useSelector((state) => state);
   if (allMonsters.length === 0) {
     store.dispatch(getListOfMonsters());
   }
-  console.log(allMonsters);
 
   return (
     <div>
