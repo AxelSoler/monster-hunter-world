@@ -2,16 +2,7 @@ import React from 'react';
 import Monster from '../Monster/Monster';
 
 const Monsters = () => {
-  const allMonsters = [
-    {
-      id: 1,
-      gameName: 'dragon1',
-    },
-    {
-      id: 2,
-      gameName: 'dragon2',
-    },
-  ];
+  const allMonsters = useSelector((state) => state.listOfMonsters);;
   return (
     <div>
       {allMonsters.map((game) => (
