@@ -36,6 +36,9 @@ export const getListOfMonsters = () => async (dispatch) => {
         monsterId: element.id,
         monsterName: element.name,
         monsterDescription: element.description,
+        monsterSpecies: element.species,
+        monsterType: element.type,
+        monsterWeaknesses: element.weaknesses,
       },
     );
   });
