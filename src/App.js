@@ -12,7 +12,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Monsters />} />
-          <Route path="selectedMonster" element={<SelectedMonster />} />
+          <Route path="Monster/:monstername" element={<SelectedMonster />} />
         </Routes>
       </div>
     </div>

@@ -1,5 +1,4 @@
 const GET_MONSTER = 'monster-hunter-world/monsters/GET_MONSTER';
-const CHOOSE_MONSTER = 'monster-hunter-world/monsters/CHOOSE_MONSTER';
 
 const listOfMonsters = [];
 const urlApi = 'https://mhw-db.com/monsters';
@@ -8,8 +7,6 @@ const monsterReducer = (state = listOfMonsters, action) => {
   switch (action.type) {
     case GET_MONSTER:
       return [...state, ...action.payload];
-    case CHOOSE_MONSTER:
-      return [...state, state.filter((monster) => monster.monsterId === action.id)];
     default:
       return state;
   }
@@ -18,11 +15,6 @@ const monsterReducer = (state = listOfMonsters, action) => {
 export const getMonster = (monster) => ({
   type: GET_MONSTER,
   payload: monster,
-});
-
-export const chooseMonster = (monsterId) => ({
-  type: CHOOSE_MONSTER,
-  id: monsterId,
 });
 
 export const getListOfMonsters = () => async (dispatch) => {
