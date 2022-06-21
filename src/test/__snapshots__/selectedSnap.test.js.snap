@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selected snapshot 1`] = `
+<div>
+  <p>
+    return to main page
+  </p>
+</div>
+`;
