@@ -25,3 +25,7 @@ code {
     'Courier New',
     monospace;
 }
+
+h1 {
+  margin: 0;
+}
