@@ -4,7 +4,7 @@ import uniqid from 'uniqid';
 
 const SelectedMonster = () => {
   const allMonsters = useSelector((state) => state);
-  const viewMonster = allMonsters[0][0];
+  const viewMonster = allMonsters[allMonsters.length - 1][0];
 
   return (
     <div>

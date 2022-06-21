@@ -12,7 +12,7 @@ const Monsters = () => {
 
   return (
     <div>
-      {allMonsters.map((monster) => (
+      {allMonsters.slice(0, 58).map((monster) => (
         <Monster key={monster.monsterId} id={monster.monsterId} name={monster.monsterName} />
       ))}
     </div>

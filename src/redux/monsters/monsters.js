@@ -9,7 +9,7 @@ const monsterReducer = (state = listOfMonsters, action) => {
     case GET_MONSTER:
       return [...state, ...action.payload];
     case CHOOSE_MONSTER:
-      return [state.filter((monster) => monster.monsterId === action.id)];
+      return [...state, state.filter((monster) => monster.monsterId === action.id)];
     default:
       return state;
   }
