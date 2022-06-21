@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`monster snapshot 1`] = `
+Array [
+  <div
+    id={345}
+  >
+    <a
+      className="link"
+      href="/Monster/Axel"
+      onClick={[Function]}
+    >
+      Axel
+    </a>
+    <p>
+      MONSTER ID:
+       
+      345
+    </p>
+  </div>,
+  ",",
+]
+`;
