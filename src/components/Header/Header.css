@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 12px auto;
+}
+
+.config {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.backBtn {
+  width: 20%;
+}
