@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import uniqid from 'uniqid';
+import './Selected.css';
 
 const SelectedMonster = () => {
   const { monstername } = useParams();
@@ -11,17 +12,31 @@ const SelectedMonster = () => {
 
   if (monster !== undefined) {
     return (
-      <div>
+      <div className="monsterAbout">
         <h2>{monster.monsterName}</h2>
-        <p>{monster.monsterDescription}</p>
-        <p>{monster.monsterSpecies}</p>
-        <p>{monster.monsterType}</p>
-        {monster.monsterWeaknesses.map((weakness) => (
-          <div key={uniqid()}>
-            <p>{weakness.element}</p>
-            <p>{weakness.stars}</p>
-          </div>
-        ))}
+        <div>
+          <p>DESCRIPTION</p>
+          <p>{monster.monsterDescription}</p>
+        </div>
+        <p>
+          SPECIES:
+          {' '}
+          {monster.monsterSpecies}
+        </p>
+        <p>
+          TYPE:
+          {' '}
+          {monster.monsterType}
+        </p>
+        <p>WEAKNESS</p>
+        <div className="weakness">
+          {monster.monsterWeaknesses.map((weakness) => (
+            <div key={uniqid()}>
+              <p>{weakness.element}</p>
+              <p>{weakness.stars}</p>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

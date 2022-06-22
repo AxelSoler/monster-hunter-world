@@ -1,0 +1,14 @@
+.monsterAbout {
+  width: 90%;
+  margin: 24px auto;
+  text-align: left;
+}
+
+p {
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.weakness {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
