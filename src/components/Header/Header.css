@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 12px 0;
+  padding: 12px 0;
+  background-color: #933157;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.config {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}

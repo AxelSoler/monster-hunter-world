@@ -1,3 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`monsters snapshot 1`] = `<div />`;
+exports[`monsters snapshot 1`] = `
+<div>
+  <div
+    className="team-list-header"
+  >
+    <p>
+      SEARCH
+    </p>
+    <input
+      className="monsterInput"
+      onChange={[Function]}
+      placeholder="Monster..."
+      type="text"
+    />
+  </div>
+  <div
+    className="grid"
+  />
+</div>
+`;

@@ -1,23 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import './Monster.css';
 
 const Monster = (props) => {
   const { id, name } = props;
 
   return (
-    <div id={id}>
+    <div className="gridMonster" id={id}>
       <NavLink
         className={({ isActive }) => (isActive ? 'link-active' : 'link')}
         to={`/Monster/${name}`}
       >
-        {name}
+        <p className="monstername">
+          {name}
+        </p>
+        <p>
+          MONSTER ID:
+          {' '}
+          {id}
+        </p>
       </NavLink>
-      <p>
-        MONSTER ID:
-        {' '}
-        {id}
-      </p>
     </div>
   );
 };

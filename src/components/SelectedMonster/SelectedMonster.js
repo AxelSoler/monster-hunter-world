@@ -1,7 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import uniqid from 'uniqid';
+import './Selected.css';
+import { AiFillStar } from 'react-icons/ai';
 
 const SelectedMonster = () => {
   const { monstername } = useParams();
@@ -11,24 +14,48 @@ const SelectedMonster = () => {
 
   if (monster !== undefined) {
     return (
-      <div>
+      <div className="monsterAbout">
         <h2>{monster.monsterName}</h2>
-        <p>{monster.monsterDescription}</p>
-        <p>{monster.monsterSpecies}</p>
-        <p>{monster.monsterType}</p>
-        {monster.monsterWeaknesses.map((weakness) => (
-          <div key={uniqid()}>
-            <p>{weakness.element}</p>
-            <p>{weakness.stars}</p>
-          </div>
-        ))}
+        <div>
+          <p>DESCRIPTION</p>
+          <p>{monster.monsterDescription}</p>
+        </div>
+        <p>
+          SPECIES:
+          {' '}
+          {monster.monsterSpecies}
+        </p>
+        <p>
+          TYPE:
+          {' '}
+          {monster.monsterType}
+        </p>
+        <h3>WEAKNESS</h3>
+        <div className="weaknesses">
+          {monster.monsterWeaknesses.map((weakness) => (
+            <div className="weakness" key={uniqid()}>
+              <p>{weakness.element.toUpperCase()}</p>
+              <ul className="stars">
+                {(() => {
+                  const rows = [];
+                  for (let i = 0; i < weakness.stars; i += 1) {
+                    rows.push(<AiFillStar size="1.5em" color="yellow" key={i} />);
+                  }
+                  return rows;
+                })()}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
 
   return (
     <div>
-      <p>return to main page</p>
+      <button className="returnBtn" type="button">
+        <NavLink to="/">RETURN TO MAIN PAGE</NavLink>
+      </button>
     </div>
   );
 };

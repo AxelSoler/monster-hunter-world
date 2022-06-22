@@ -3,6 +3,7 @@
 exports[`monster snapshot 1`] = `
 Array [
   <div
+    className="gridMonster"
     id={345}
   >
     <a
@@ -10,13 +11,17 @@ Array [
       href="/Monster/Axel"
       onClick={[Function]}
     >
-      Axel
+      <p
+        className="monstername"
+      >
+        Axel
+      </p>
+      <p>
+        MONSTER ID:
+         
+        345
+      </p>
     </a>
-    <p>
-      MONSTER ID:
-       
-      345
-    </p>
   </div>,
   ",",
 ]
