@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import uniqid from 'uniqid';
 import './Selected.css';
 import { AiFillStar } from 'react-icons/ai';
@@ -52,7 +53,9 @@ const SelectedMonster = () => {
 
   return (
     <div>
-      <p>return to main page</p>
+      <button className="returnBtn" type="button">
+        <NavLink to="/">RETURN TO MAIN PAGE</NavLink>
+      </button>
     </div>
   );
 };

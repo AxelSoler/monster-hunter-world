@@ -27,3 +27,11 @@ p {
 h3 {
   text-align: center;
 }
+
+.returnBtn {
+  height: 64px;
+  width: 50%;
+  margin-top: 64px;
+  background-color: rgb(176, 2, 17);
+  border-radius: 5px;
+}
