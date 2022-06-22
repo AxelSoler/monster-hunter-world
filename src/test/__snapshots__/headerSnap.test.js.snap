@@ -39,7 +39,7 @@ Array [
         <svg
           color="#fff"
           fill="currentColor"
-          height="2em"
+          height="1.5em"
           stroke="currentColor"
           strokeWidth="0"
           style={
@@ -48,7 +48,7 @@ Array [
             }
           }
           viewBox="0 0 512 512"
-          width="2em"
+          width="1.5em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -58,7 +58,7 @@ Array [
         <svg
           color="#fff"
           fill="currentColor"
-          height="2em"
+          height="1.5em"
           stroke="currentColor"
           strokeWidth="0"
           style={
@@ -67,7 +67,7 @@ Array [
             }
           }
           viewBox="0 0 14 16"
-          width="2em"
+          width="1.5em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
