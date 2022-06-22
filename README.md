@@ -12,7 +12,7 @@ Web application to analyze the information about all the monsters of Monster Hun
 
 ## Live Demo
 
-[Live Demo Link](https://radiant-taffy-25c53a.netlify.app/)
+[Live Demo Link](https://golden-capybara-afafa7.netlify.app/)
 
 ## About video
 
