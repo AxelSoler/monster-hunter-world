@@ -16,7 +16,7 @@ Web application to analyze the information about all the monsters of Monster Hun
 
 ## About video
 
-[video](https://www.loom.com/share/398a28a1abd1413e81476d184d1cb843)
+[video](https://www.loom.com/share/809cbea31e43403fa25c375040c95ccd)
 
 ## Getting Started
 
