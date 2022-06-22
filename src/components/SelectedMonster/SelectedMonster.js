@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import uniqid from 'uniqid';
 import './Selected.css';
+import { AiFillStar } from 'react-icons/ai';
 
 const SelectedMonster = () => {
   const { monstername } = useParams();
@@ -33,7 +34,15 @@ const SelectedMonster = () => {
           {monster.monsterWeaknesses.map((weakness) => (
             <div key={uniqid()}>
               <p>{weakness.element}</p>
-              <p>{weakness.stars}</p>
+              <ul className="stars">
+                {(() => {
+                  const rows = [];
+                  for (let i = 0; i < weakness.stars; i += 1) {
+                    rows.push(<AiFillStar color="yellow" key={i} />);
+                  }
+                  return rows;
+                })()}
+              </ul>
             </div>
           ))}
         </div>
