@@ -7,11 +7,11 @@ const Monster = (props) => {
   const { id, name } = props;
 
   return (
-    <NavLink
-      className={({ isActive }) => (isActive ? 'link-active' : 'link')}
-      to={`/Monster/${name}`}
-    >
-      <div className="gridMonster" id={id}>
+    <div className="gridMonster" id={id}>
+      <NavLink
+        className={({ isActive }) => (isActive ? 'link-active' : 'link')}
+        to={`/Monster/${name}`}
+      >
         <p className="monstername">
           {name}
         </p>
@@ -20,8 +20,8 @@ const Monster = (props) => {
           {' '}
           {id}
         </p>
-      </div>
-    </NavLink>
+      </NavLink>
+    </div>
   );
 };
 

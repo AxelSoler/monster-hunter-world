@@ -1,12 +1,15 @@
 .gridMonster {
-  border-bottom: 1px solid #fff;
-  padding: 24px 0;
+  width: 49%;
+  border: 1px solid #fff;
+  height: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 12px 0;
 }
 
-.gridMonster:nth-child(odd) {
-  border-right: 1px solid #fff;
+.gridMonster:hover {
+  background-color: #933157;
 }
 
 a {
