@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { getListOfMonsters } from '../../redux/monsters/monsters';
 import store from '../../redux/configureStore';
 import Monster from '../Monster/Monster';
+import './Monsters.css';
 
 const Monsters = () => {
   const allMonsters = useSelector((state) => state);
@@ -11,7 +12,7 @@ const Monsters = () => {
   }
 
   return (
-    <div>
+    <div className="grid">
       {allMonsters.map((monster) => (
         <Monster key={monster.monsterId} id={monster.monsterId} name={monster.monsterName} />
       ))}

@@ -1,0 +1,23 @@
+.gridMonster {
+  border-bottom: 1px solid #fff;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.gridMonster:nth-child(odd) {
+  border-right: 1px solid #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  margin: 12px 0;
+}
+
+.monstername {
+  font-size: 1.5rem;
+}
