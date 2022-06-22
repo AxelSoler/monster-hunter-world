@@ -1,9 +1,11 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 95%;
-  margin: 12px 5% 12px 0;
+  width: 100%;
+  margin: 0 0 12px 0;
+  padding: 12px 0;
+  background-color: #933157;
 }
 
 h1 {
@@ -14,9 +16,5 @@ h1 {
 .config {
   display: flex;
   justify-content: space-between;
-  width: 20%;
-}
-
-.backBtn {
-  width: 18%;
+  width: 15%;
 }

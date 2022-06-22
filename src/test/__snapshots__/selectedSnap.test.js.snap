@@ -2,8 +2,18 @@
 
 exports[`selected snapshot 1`] = `
 <div>
-  <p>
-    return to main page
-  </p>
+  <button
+    className="returnBtn"
+    type="button"
+  >
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+    >
+      RETURN TO MAIN PAGE
+    </a>
+  </button>
 </div>
 `;

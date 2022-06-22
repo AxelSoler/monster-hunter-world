@@ -10,8 +10,8 @@ const Header = () => (
       <NavLink to="/" className="backBtn"><IoIosArrowBack size="2.5em" color="#fff" /></NavLink>
       <h1>Monsters</h1>
       <div className="config">
-        <IoMdMic size="2em" color="#fff" />
-        <GoGear size="2em" color="#fff" />
+        <IoMdMic size="1.5em" color="#fff" />
+        <GoGear size="1.5em" color="#fff" />
       </div>
     </header>
   </div>
