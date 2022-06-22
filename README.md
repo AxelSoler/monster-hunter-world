@@ -1,4 +1,4 @@
-## monster-hunter-world
+## Monster Hunter World
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
@@ -13,6 +13,10 @@ Web application to analyze the information about all the monsters of Monster Hun
 ## Live Demo
 
 [Live Demo Link](https://radiant-taffy-25c53a.netlify.app/)
+
+## About video
+
+[video](https://www.loom.com/share/398a28a1abd1413e81476d184d1cb843)
 
 ## Getting Started
 
