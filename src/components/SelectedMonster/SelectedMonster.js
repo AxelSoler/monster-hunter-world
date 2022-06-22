@@ -29,16 +29,16 @@ const SelectedMonster = () => {
           {' '}
           {monster.monsterType}
         </p>
-        <p>WEAKNESS</p>
-        <div className="weakness">
+        <h3>WEAKNESS</h3>
+        <div className="weaknesses">
           {monster.monsterWeaknesses.map((weakness) => (
-            <div key={uniqid()}>
-              <p>{weakness.element}</p>
+            <div className="weakness" key={uniqid()}>
+              <p>{weakness.element.toUpperCase()}</p>
               <ul className="stars">
                 {(() => {
                   const rows = [];
                   for (let i = 0; i < weakness.stars; i += 1) {
-                    rows.push(<AiFillStar color="yellow" key={i} />);
+                    rows.push(<AiFillStar size="1.5em" color="yellow" key={i} />);
                   }
                   return rows;
                 })()}
