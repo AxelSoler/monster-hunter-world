@@ -1,0 +1,13 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 48px auto;
+}
+
+.monsterInput {
+  width: 50%;
+  padding: 12px;
+  font-size: 18px;
+}
