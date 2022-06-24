@@ -1,0 +1,15 @@
+.pageNav {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+  width: 70%;
+  margin: 48px auto;
+}
+
+.pageLink {
+  border: 1px solid #fff;
+}
+
+.pageLink p {
+  padding: 64px 24px;
+}

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Monsters from '../components/Monsters/Monsters';
-import SelectedMonster from '../components/SelectedMonster/SelectedMonster';
-import Links from '../components/Links/Links';
-import './AllPages.css';
+import Monsters from '../Monsters/Monsters';
+import SelectedMonster from '../SelectedMonster/SelectedMonster';
+import Links from '../Links/Links';
 
 const AllPages = () => (
   <div className="allPages">

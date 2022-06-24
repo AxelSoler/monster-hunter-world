@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import AllPages from './pages/AllPages';
+import AllPages from './components/pages/AllPages';
 import './App.css';
 
 const App = () => (
