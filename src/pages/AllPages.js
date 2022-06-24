@@ -1,8 +1,17 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import MonstersPage from './MonstersPage';
 
 const AllPages = () => (
-  <div className="monsterPage">
+  <div className="allPages">
+    <NavLink
+      className={({ isActive }) => (isActive ? 'link-active' : 'link')}
+      to="/Monster/"
+    >
+      <p className="monstername">
+        Monsters
+      </p>
+    </NavLink>
     <MonstersPage />
   </div>
 );

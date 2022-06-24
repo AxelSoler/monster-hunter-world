@@ -6,7 +6,7 @@ import SelectedMonster from '../components/SelectedMonster/SelectedMonster';
 const MonstersPage = () => (
   <div className="monsterPage">
     <Routes>
-      <Route path="/" element={<Monsters />} />
+      <Route path="Monster" element={<Monsters />} />
       <Route path="Monster/:monstername" element={<SelectedMonster />} />
     </Routes>
   </div>
