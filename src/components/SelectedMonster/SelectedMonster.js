@@ -15,6 +15,7 @@ const SelectedMonster = () => {
   if (monster !== undefined) {
     return (
       <div className="monsterAbout">
+        <img className="monsterImg" src={`/img/monsters/${monster.monsterName}.jpg`} alt={`${monster.monsterName}`} />
         <h2>{monster.monsterName}</h2>
         <div>
           <p>DESCRIPTION</p>
