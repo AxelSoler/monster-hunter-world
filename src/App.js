@@ -1,22 +1,13 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
+import AllPages from './pages/AllPages';
 import './App.css';
-import Monsters from './components/Monsters/Monsters';
-import SelectedMonster from './components/SelectedMonster/SelectedMonster';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <div>
-        <Routes>
-          <Route path="/" element={<Monsters />} />
-          <Route path="Monster/:monstername" element={<SelectedMonster />} />
-        </Routes>
-      </div>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <Header />
+    <AllPages />
+  </div>
+);
 
 export default App;
