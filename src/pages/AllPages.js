@@ -1,18 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import MonstersPage from './MonstersPage';
+import { Route, Routes } from 'react-router-dom';
+import Monsters from '../components/Monsters/Monsters';
+import SelectedMonster from '../components/SelectedMonster/SelectedMonster';
+import Links from '../components/Links/Links';
+import './AllPages.css';
 
 const AllPages = () => (
   <div className="allPages">
-    <NavLink
-      className={({ isActive }) => (isActive ? 'link-active' : 'link')}
-      to="/Monster/"
-    >
-      <p>
-        Monsters
-      </p>
-    </NavLink>
-    <MonstersPage />
+    <Routes>
+      <Route path="/" element={<Links />} />
+      <Route path="Monster" element={<Monsters />} />
+      <Route path="Monster/:monstername" element={<SelectedMonster />} />
+    </Routes>
   </div>
 );
 

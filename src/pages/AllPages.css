@@ -1,0 +1,8 @@
+.pageLink {
+  border: 1px solid #fff;
+}
+
+.allPages {
+  display: flex;
+  justify-content: center;
+}
