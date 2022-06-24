@@ -8,7 +8,7 @@ const AllPages = () => (
       className={({ isActive }) => (isActive ? 'link-active' : 'link')}
       to="/Monster/"
     >
-      <p className="monstername">
+      <p>
         Monsters
       </p>
     </NavLink>
