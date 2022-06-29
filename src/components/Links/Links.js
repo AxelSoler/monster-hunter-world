@@ -26,11 +26,11 @@ const Links = () => (
     </NavLink>
     <NavLink
       className={({ isActive }) => (isActive ? 'link-active' : 'link')}
-      to="/Aliments/"
+      to="/Weapon/"
     >
       <div className="pageLink">
         <p>
-          Aliments
+          Weapons
         </p>
       </div>
     </NavLink>

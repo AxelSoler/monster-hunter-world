@@ -8,6 +8,8 @@ import Armors from './components/armorComponent/Armors/Armors';
 import SelectedArmor from './components/armorComponent/SelectedArmor/SelectedArmor';
 import SelectedLocation from './components/locationComponent/SelectedLocation/SelectedLocation';
 import Locations from './components/locationComponent/Locations/Locations';
+import Weapons from './components/weaponComponent/Weapons/Weapons';
+import SelectedWeapon from './components/weaponComponent/SelectedWeapon/SelectedWeapon';
 import './App.css';
 
 const App = () => (
@@ -22,6 +24,8 @@ const App = () => (
         <Route path="Armor/:armorname" element={<SelectedArmor />} />
         <Route path="Location" element={<Locations />} />
         <Route path="Location/:locationname" element={<SelectedLocation />} />
+        <Route path="Weapon" element={<Weapons />} />
+        <Route path="Weapon/:weaponname" element={<SelectedWeapon />} />
       </Routes>
     </div>
   </div>
