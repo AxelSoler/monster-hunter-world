@@ -36,7 +36,7 @@ const Links = () => (
     </NavLink>
     <NavLink
       className={({ isActive }) => (isActive ? 'link-active' : 'link')}
-      to="/Locations/"
+      to="/Location/"
     >
       <div className="pageLink">
         <p>

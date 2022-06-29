@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { getListOfMonsters } from '../../redux/monsters/monsters';
-import store from '../../redux/configureStore';
+import { getListOfMonsters } from '../../../redux/monsters/monsters';
+import store from '../../../redux/configureStore';
 import Monster from '../Monster/Monster';
 import './Monsters.css';
 
