@@ -4,9 +4,7 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   color: #fff;
-  background-image: url("/public/img/monster_hunter_world_background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: black;
 }
 
 code {

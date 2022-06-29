@@ -8,7 +8,7 @@ import { AiFillStar } from 'react-icons/ai';
 
 const SelectedMonster = () => {
   const { monstername } = useParams();
-  const allMonsters = useSelector((state) => state);
+  const allMonsters = useSelector((state) => state.allMonsters);
   const monsterArray = allMonsters.filter((element) => element.monsterName === monstername);
   const monster = monsterArray[0];
 

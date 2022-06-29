@@ -7,7 +7,7 @@ import './Monsters.css';
 
 const Monsters = () => {
   const [Filter, setFilter] = useState('');
-  const allMonsters = useSelector((state) => state);
+  const allMonsters = useSelector((state) => state.allMonsters);
   if (allMonsters.length === 0) {
     store.dispatch(getListOfMonsters());
   }
