@@ -1,7 +1,7 @@
 const GET_ARMOR = 'monster-hunter-world/armor/GET_ARMOR';
 
 const listOfArmor = [];
-const urlApi = 'https://mhw-db.com/armor';
+const urlApi = 'https://mhw-db.com/armor/sets';
 
 const armorReducer = (state = listOfArmor, action) => {
   switch (action.type) {
@@ -27,10 +27,7 @@ export const getListOfArmor = () => async (dispatch) => {
       {
         armorId: element.id,
         armorName: element.name,
-        armorRarity: element.rarity,
-        armorDefense: element.defense,
-        armorResistance: element.resistances,
-        armorSet: element.armorSet.name,
+        armorPieces: element.pieces,
       },
     );
   });

@@ -18,7 +18,6 @@ const Armors = () => {
             key={armor.armorId}
             id={armor.armorId}
             name={armor.armorName}
-            set={armor.armorSet}
           />
         ))}
       </div>

@@ -13,7 +13,6 @@ const SelectedArmor = () => {
     return (
       <div className="monsterAbout">
         <h2>{armor.armorName}</h2>
-        <h2>{armor.armorSet}</h2>
       </div>
     );
   }

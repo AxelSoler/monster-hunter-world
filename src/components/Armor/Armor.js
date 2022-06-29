@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
 const Armor = (props) => {
-  const { id, name, set } = props;
+  const { id, name } = props;
 
   return (
     <div className="gridMonster" id={id}>
@@ -13,9 +13,6 @@ const Armor = (props) => {
       >
         <p className="monstername">
           {name}
-        </p>
-        <p className="monstername">
-          {set}
         </p>
         <p>
           ARMOR ID:
@@ -32,11 +29,9 @@ export default Armor;
 Armor.propTypes = {
   id: PropTypes.number,
   name: PropTypes.string,
-  set: PropTypes.string,
 };
 
 Armor.defaultProps = {
   id: 0,
-  name: 'ARMOR',
-  set: 'UNKNOW',
+  name: 'UNKNOW',
 };
