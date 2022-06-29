@@ -4,6 +4,8 @@ import Header from './components/Header/Header';
 import Monsters from './components/Monsters/Monsters';
 import Links from './components/Links/Links';
 import SelectedMonster from './components/SelectedMonster/SelectedMonster';
+import Armors from './components/Armors/Armors';
+import SelectedArmor from './components/SelectedArmor/SelectedArmor';
 import './App.css';
 
 const App = () => (
@@ -14,6 +16,8 @@ const App = () => (
         <Route path="/" element={<Links />} />
         <Route path="Monster" element={<Monsters />} />
         <Route path="Monster/:monstername" element={<SelectedMonster />} />
+        <Route path="Armor" element={<Armors />} />
+        <Route path="Armor/:armorname" element={<SelectedArmor />} />
       </Routes>
     </div>
   </div>
