@@ -10,7 +10,7 @@ const Header = (props) => {
     <div className="headerContainer">
       <NavLink to="/" className="backBtn"><IoIosArrowBack size="2.5em" color="#fff" /></NavLink>
       <header>
-        <h3>{name}</h3>
+        <h2>{name}</h2>
       </header>
     </div>
   );

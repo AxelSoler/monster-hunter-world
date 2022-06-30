@@ -6,7 +6,7 @@ const Links = () => (
   <div>
     <div>
       <header>
-        <h3>Monster Hunter World</h3>
+        <h2>Monster Hunter World</h2>
       </header>
     </div>
     <div className="pageNav">
