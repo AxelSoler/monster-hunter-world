@@ -19,5 +19,9 @@ const Header = (props) => {
 export default Header;
 
 Header.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
+};
+
+Header.defaultProps = {
+  name: 'MONSTER HUNTER WORLD',
 };

@@ -3,15 +3,39 @@
   justify-content: center;
   grid-template-columns: 50% 50%;
   width: 70%;
-  margin: 48px auto;
+  margin: 24px auto 0 auto;
+  border: 1px dashed gold;
 }
 
 .pageLink {
-  border: 1px solid #fff;
+  border: 1px dashed gold;
+}
+
+.link {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#monstersLink {
+  background-image: url('/public/img/links/mbackground.jpg');
+}
+
+#armorLink {
+  background-image: url('/public/img/links/abackground.jpg');
+}
+
+#locationsLink {
+  background-image: url('/public/img/links/lbackground.jpg');
+}
+
+#weaponsLink {
+  background-image: url('/public/img/links/wbackground.jpg');
 }
 
 .pageLink p {
-  padding: 64px 24px;
+  margin: 256px 0 6px 0;
+  color: rgb(255, 217, 0);
+  font-size: 20px;
 }
 
 header {
@@ -22,4 +46,9 @@ header {
   margin: 0 0 12px 0;
   padding: 12px 0;
   background-color: rgb(33, 32, 32);
+}
+
+.logo {
+  width: 256px;
+  margin-bottom: 24px;
 }
