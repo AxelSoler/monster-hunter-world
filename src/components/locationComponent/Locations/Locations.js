@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import store from '../../../redux/configureStore';
 import { getListOfLocation } from '../../../redux/location/location';
+import Header from '../../Header/Header';
 import Location from '../Location/Location';
 
 const Locations = () => {
@@ -12,6 +13,7 @@ const Locations = () => {
 
   return (
     <div>
+      <Header name="LOCATIONS" />
       <div className="grid">
         {allLocation.map((location) => (
           <Location

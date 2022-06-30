@@ -1,19 +1,13 @@
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  margin: 0 0 12px 0;
-  padding: 12px 0;
-}
-
 h3 {
-  margin: 0;
   font-family: 'Gill Sans', sans-serif;
 }
 
-.config {
+.backBtn {
+  margin-left: 12px;
+  position: absolute;
+  top: 20px;
+}
+
+.headerContainer {
   display: flex;
-  justify-content: space-between;
-  width: 15%;
 }

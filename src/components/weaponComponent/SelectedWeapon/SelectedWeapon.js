@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { NavLink } from 'react-router-dom';
+import Header from '../../Header/Header';
 
 const SelectedWeapon = () => {
   const { weaponname } = useParams();
@@ -11,8 +12,11 @@ const SelectedWeapon = () => {
 
   if (weapon !== undefined) {
     return (
-      <div className="monsterAbout">
-        <h2>{weapon.weaponName}</h2>
+      <div>
+        <Header name={weapon.weaponName} />
+        <div className="monsterAbout">
+          <h2>{weapon.weaponName}</h2>
+        </div>
       </div>
     );
   }

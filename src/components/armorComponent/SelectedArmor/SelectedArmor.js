@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { NavLink } from 'react-router-dom';
+import Header from '../../Header/Header';
 
 const SelectedArmor = () => {
   const { armorname } = useParams();
@@ -11,8 +12,11 @@ const SelectedArmor = () => {
 
   if (armor !== undefined) {
     return (
-      <div className="monsterAbout">
-        <h2>{armor.armorName}</h2>
+      <div>
+        <Header name={armor.armorName} />
+        <div className="monsterAbout">
+          <h2>{armor.armorName}</h2>
+        </div>
       </div>
     );
   }
