@@ -26,6 +26,7 @@ const App = () => (
         <Route path="Weapon/:weaponname" element={<SelectedWeapon />} />
       </Routes>
     </div>
+    <img className="logo" src="/img/links/logo.jpg" alt="logo" />
   </div>
 );
 

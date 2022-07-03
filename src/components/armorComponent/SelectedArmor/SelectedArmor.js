@@ -21,7 +21,28 @@ const SelectedArmor = () => {
               const rows = [];
               for (let i = 0; i < armor.armorPieces.length; i += 1) {
                 if (armor.armorPieces[i].assets.imageFemale) {
-                  rows.push(<img className="armorImg" src={armor.armorPieces[i].assets.imageFemale} alt={armor.armorName} key={i} />);
+                  rows.push(
+                    <div key={i}>
+                      <img className="armorImg" src={armor.armorPieces[i].assets.imageFemale} alt={armor.armorName} key={i} />
+                      <div>
+                        <p>
+                          Augmented defense
+                          {' '}
+                          {armor.armorPieces[i].defense.augmented}
+                        </p>
+                        <p>
+                          Base defense
+                          {' '}
+                          {armor.armorPieces[i].defense.base}
+                        </p>
+                        <p>
+                          Max defense
+                          {' '}
+                          {armor.armorPieces[i].defense.max}
+                        </p>
+                      </div>
+                    </div>,
+                  );
                 }
               }
               return rows;
@@ -31,7 +52,28 @@ const SelectedArmor = () => {
             {(() => {
               const rows = [];
               for (let i = 0; i < armor.armorPieces.length; i += 1) {
-                rows.push(<img className="armorImg" src={armor.armorPieces[i].assets.imageMale} alt={armor.armorName} key={i} />);
+                rows.push(
+                  <div key={i}>
+                    <img className="armorImg" src={armor.armorPieces[i].assets.imageMale} alt={armor.armorName} key={i} />
+                    <div>
+                      <p>
+                        Augmented defense
+                        {' '}
+                        {armor.armorPieces[i].defense.augmented}
+                      </p>
+                      <p>
+                        Base defense
+                        {' '}
+                        {armor.armorPieces[i].defense.base}
+                      </p>
+                      <p>
+                        Max defense
+                        {' '}
+                        {armor.armorPieces[i].defense.max}
+                      </p>
+                    </div>
+                  </div>,
+                );
               }
               return rows;
             })()}

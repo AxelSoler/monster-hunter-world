@@ -55,7 +55,6 @@ const Links = () => (
         </div>
       </NavLink>
     </div>
-    <img className="logo" src="/img/links/logo.jpg" alt="logo" />
   </div>
 );
 
