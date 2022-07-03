@@ -1,0 +1,22 @@
+.gridMonster {
+  width: 49%;
+  border: 1px solid gold;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  margin: 12px 0;
+}
+
+.monstername {
+  font-size: 1.5rem;
+}

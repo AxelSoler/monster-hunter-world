@@ -1,0 +1,30 @@
+.armorAbout {
+  display: flex;
+  width: 100%;
+}
+
+.femaleArmor {
+  margin: 0 12px 0 24px;
+  width: 50%;
+  background-color: rgb(250, 15, 238);
+  border: 8px dotted rgb(31, 250, 15);
+  overflow-y: scroll;
+  height: 70vh;
+}
+
+.maleArmor {
+  margin: 0 24px 0 12px;
+  background-color: rgb(3, 3, 126);
+  border: 8px dotted rgb(31, 250, 15);
+  width: 50%;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.armorImg {
+  width: 124px;
+}
+
+.armorAbout p {
+  font-size: 12px;
+}

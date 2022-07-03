@@ -1,0 +1,41 @@
+.monsterAbout {
+  width: 90%;
+  margin: 24px auto;
+  text-align: left;
+}
+
+p {
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.weaknesses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.stars {
+  padding: 0;
+}
+
+.weakness {
+  margin: 4px auto;
+  width: 33%;
+}
+
+h3 {
+  text-align: center;
+}
+
+.returnBtn {
+  height: 64px;
+  width: 50%;
+  margin-top: 64px;
+  background-color: #4369b2;
+  border-radius: 5px;
+}
+
+.monsterImg {
+  width: 100%;
+}
