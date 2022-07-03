@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import Header from '../../Header/Header';
+import './selectedArmor.css';
 
 const SelectedArmor = () => {
   const { armorname } = useParams();
@@ -14,8 +15,27 @@ const SelectedArmor = () => {
     return (
       <div>
         <Header name={armor.armorName} />
-        <div className="monsterAbout">
-          <h2>{armor.armorName}</h2>
+        <div className="armorAbout">
+          <div className="femaleArmor">
+            {(() => {
+              const rows = [];
+              for (let i = 0; i < armor.armorPieces.length; i += 1) {
+                if (armor.armorPieces[i].assets.imageFemale) {
+                  rows.push(<img className="armorImg" src={armor.armorPieces[i].assets.imageFemale} alt={armor.armorName} key={i} />);
+                }
+              }
+              return rows;
+            })()}
+          </div>
+          <div className="maleArmor">
+            {(() => {
+              const rows = [];
+              for (let i = 0; i < armor.armorPieces.length; i += 1) {
+                rows.push(<img className="armorImg" src={armor.armorPieces[i].assets.imageMale} alt={armor.armorName} key={i} />);
+              }
+              return rows;
+            })()}
+          </div>
         </div>
       </div>
     );
