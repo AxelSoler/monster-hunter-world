@@ -3,7 +3,9 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 90%;
+  height: 59.4vh;
   margin: 48px auto;
+  overflow-y: scroll;
 }
 
 .monsterInput {
