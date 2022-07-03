@@ -13,7 +13,9 @@ Web application to analyze the information about all the monsters of Monster Hun
 ## Live Demo
 
 [Live Demo Link for the project](https://golden-capybara-afafa7.netlify.app/)
+
 [Link for a better version of the project](https://app.netlify.com/sites/classy-banoffee-260a19/overview)
+
 More changes in the future
 
 ## About video
