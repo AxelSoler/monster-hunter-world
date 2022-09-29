@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { getListOfMonsters } from '../../redux/monsters/monsters';
-import store from '../../redux/configureStore';
+import { getListOfMonsters } from '../../../redux/monsters/monsters';
+import store from '../../../redux/configureStore';
 import Monster from '../Monster/Monster';
+import Header from '../../Header/Header';
 import './Monsters.css';
 
 const Monsters = () => {
   const [Filter, setFilter] = useState('');
-  const allMonsters = useSelector((state) => state);
+  const allMonsters = useSelector((state) => state.allMonsters);
   if (allMonsters.length === 0) {
     store.dispatch(getListOfMonsters());
   }
@@ -18,6 +19,7 @@ const Monsters = () => {
 
   return (
     <div>
+      <Header name="MONSTERS" />
       <div className="team-list-header">
         <p>SEARCH</p>
         <input className="monsterInput" onChange={onChange} type="text" placeholder="Monster..." />

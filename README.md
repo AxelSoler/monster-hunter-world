@@ -1,4 +1,4 @@
-## monster-hunter-world
+## Monster Hunter World
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
@@ -12,7 +12,15 @@ Web application to analyze the information about all the monsters of Monster Hun
 
 ## Live Demo
 
-[Live Demo Link](https://radiant-taffy-25c53a.netlify.app/)
+[Live Demo Link for the project](https://golden-capybara-afafa7.netlify.app/)
+
+[Link for a better version of the project](https://classy-banoffee-260a19.netlify.app/)
+
+More changes in the future
+
+## About video
+
+[video](https://www.loom.com/share/809cbea31e43403fa25c375040c95ccd)
 
 ## Getting Started
 
@@ -51,10 +59,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 
 ## 📝 License
 

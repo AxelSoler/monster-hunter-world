@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
-import Monster from '../components/Monster/Monster';
+import Monster from '../components/monsterComponent/Monster/Monster';
 
 test('monster snapshot', () => {
   const tree = renderer
